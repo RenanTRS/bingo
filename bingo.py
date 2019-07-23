@@ -34,9 +34,9 @@ while True:
             for p in tabTemp:
                 contTemp += 1
                 if contTemp % 10 == 0: # Se o número for dezena, imprima e depois pule uma linha.
-                    print(f'{p:3} \n')
+                    print(f'[{p:^4}] \n')
                 else:
-                    print(f'{p:3}', end=' ') # Se não, apenas imprima do lado
+                    print(f'[{p:^4}]', end=' ') # Se não, apenas imprima do lado
             
             print('\n')
             
@@ -55,8 +55,8 @@ tabela.sort()
 for c in tabela:
     cont += 1
     if cont % 10 == 0:# Se for dezena, imprima e pule uma linha.
-        print(f'{c:3} \n')
+        print(f'[{c:^4}] \n')
     else:
-        print(f'{c:3}', end=' ') # Se não, imprima e continue na mesma linha.
+        print(f'[{c:^4}]', end=' ') # Se não, imprima e continue na mesma linha.
 
 print('\n')
