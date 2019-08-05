@@ -1,8 +1,8 @@
-'''
-Bingo.
-Created by Renan Souza on 08/01/19.
-Copyright © 2019 All right reserved.
-'''
+#--------------------------------------
+# Bingo.
+# Created by Renan Souza on 08/01/19.
+# Free for editing.
+#--------------------------------------
 
 from random import randint
 from time import sleep
