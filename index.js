@@ -22,7 +22,8 @@ function sortear(){
     /*for(var c in numOrdem){
         let cartela = document.querySelector('#cartela');
         let caso = numOrdem[c];
-        cartela.innerHTML += caso;
+        let teste = caso;
+        cartela.innerHTML = teste;
     }*/
     var cartela = document.querySelector('#cartela');
     cartela.innerHTML = numOrdem;
