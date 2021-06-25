@@ -8,12 +8,25 @@ function sortear(){
             break;
         }
     }
-    numeros.sort(ordem);
-    //document.getElementById("cartela").innerHTML = numeros + "<br>";
-    var cartela = document.querySelector('#cartela');
-    cartela.innerHTML = numeros;
-        
     
+    numeros.sort(ordem);
+    let numOrdem = [];
+    for(var i in numeros){
+        if(numeros[i] < 10){
+            numOrdem.push('<p>'+'0'+numeros[i]+'</p>')
+        }else{
+            numOrdem.push('<p>'+numeros[i]+'</p>');
+        }
+    }
+    
+    /*for(var c in numOrdem){
+        var cartela = document.querySelector('#cartela');
+        var caso = numOrdem[c];
+        cartela.innerHTML += numOrdem[c];
+        caso = null;
+    }*/
+    var cartela = document.querySelector('#cartela');
+    cartela.innerHTML = numOrdem;
     
 }
 function aleatorio(min, max){
