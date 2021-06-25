@@ -1,0 +1,36 @@
+/*font-family: 'Press Start 2P', cursive;*/
+body{
+    padding: 32px;
+    background: #181C1F;
+}
+.conteudo{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: 1fr 2fr;
+    grid-template-areas: 
+        "botao"
+        "numero__cartela";
+}
+
+.btn__sortear{
+    grid-area: botao;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+.sortear{
+    background: #F7CD1F;
+    font-size: 6rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 0;
+    border-bottom: 6px solid #ad911f;
+}
+.sortear:active{
+    border-bottom: 0;
+}
+.cartela__container{
+    grid-area: numero__cartela;
+    background: #282C2F;
+    border-radius: 10px;
+}
