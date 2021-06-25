@@ -11,11 +11,14 @@ function sortear(){
     
     numeros.sort(ordem);
     let numOrdem = [];
+    let listaNum = '';
     for(var i in numeros){
         if(numeros[i] < 10){
-            numOrdem.push('<p>'+'0'+numeros[i]+'</p>')
+            //numOrdem.push('<p>'+'0'+numeros[i]+'</p>')
+            listaNum += '<p>'+'0'+numeros[i]+'</p>';
         }else{
-            numOrdem.push('<p>'+numeros[i]+'</p>');
+            //numOrdem.push('<p>'+numeros[i]+'</p>');
+            listaNum += '<p>'+numeros[i]+'</p>';
         }
     }
     
@@ -26,7 +29,8 @@ function sortear(){
         cartela.innerHTML = teste;
     }*/
     var cartela = document.querySelector('#cartela');
-    cartela.innerHTML = numOrdem;
+    //cartela.innerHTML = numOrdem;
+    cartela.innerHTML = listaNum;
     
 }
 function aleatorio(min, max){
