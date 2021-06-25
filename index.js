@@ -20,10 +20,9 @@ function sortear(){
     }
     
     /*for(var c in numOrdem){
-        var cartela = document.querySelector('#cartela');
-        var caso = numOrdem[c];
-        cartela.innerHTML += numOrdem[c];
-        caso = null;
+        let cartela = document.querySelector('#cartela');
+        let caso = numOrdem[c];
+        cartela.innerHTML += caso;
     }*/
     var cartela = document.querySelector('#cartela');
     cartela.innerHTML = numOrdem;
