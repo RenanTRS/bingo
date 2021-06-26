@@ -22,6 +22,7 @@ function sortear(){
             break;
         }
         if(numeros.length >= 99){ //flag
+            alert("Todas as pedras foram cantadas");
             break;
         }
     }
