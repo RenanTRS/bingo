@@ -26,6 +26,7 @@ body{
     border-radius: 50%;
     border: 0;
     border-bottom: 6px solid #ad911f;
+    
 }
 .sortear:active{
     border-bottom: 0;
@@ -51,4 +52,5 @@ body{
     border: 1px solid white;
     margin: 0 10px 10px 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
