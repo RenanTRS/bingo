@@ -6,7 +6,7 @@ body{
 .conteudo{
     display: grid;
     grid-template-columns: 100%;
-    grid-auto-rows: 1fr 2fr;
+    grid-auto-rows: auto 2fr;
     grid-template-areas: 
         "botao"
         "numero__cartela";
