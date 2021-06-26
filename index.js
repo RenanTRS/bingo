@@ -12,7 +12,12 @@ function sortear(){
     while(true){
         var numero = aleatorio(1, 99);
         if (numeros.includes(numero) == false){
-            document.getElementById("sortear").textContent = numero;
+            if(numero < 10){
+                document.getElementById("sortear").textContent = '0'+numero;    
+            }else{
+                document.getElementById("sortear").textContent = numero;
+            }
+            
             numeros.push(numero);
             break;
         }
